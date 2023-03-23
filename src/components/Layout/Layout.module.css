@@ -1,0 +1,9 @@
+.LayoutRoot {
+    min-height: 100vh;
+    background-color: #fafafa;
+}
+
+.LayoutBody {
+    max-width: 1080px;
+    margin: auto;
+}
