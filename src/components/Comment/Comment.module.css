@@ -1,0 +1,10 @@
+.comments {
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 5px;
+}
