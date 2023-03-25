@@ -1,11 +1,12 @@
-import { getPhotos } from "./photos"
-import { getUser } from "./users"
+import { getPhotos, mutatePhoto } from './photos';
+import { getUser, mutateUser } from './users';
 
 export const api = {
     photos: {
         getPhotos,
     },
-    user: {
+    users: {
         getUser,
-    }
-}
+        mutateUser,
+    },
+};

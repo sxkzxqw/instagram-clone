@@ -11,6 +11,7 @@ const MainPage = () => {
     const photos = useSelector(state => state.photos.photos);
     const loading = useSelector(state => state.photos.isPhotosLoading);
     const total = useSelector(state => state.photos.totalPhotos);
+    const authorizedUser = useSelector(state => state.users.authorizedUser)
     const dispatch = useDispatch();
 
     const [page, setPage] = useState(1)
@@ -24,7 +25,7 @@ const MainPage = () => {
     }
 
     return (
-        <Layout nickName='sxkzxqw' id={1}>
+        <Layout nickName={authorizedUser.nickname} id={authorizedUser.id} avatarUrl={authorizedUser.avatarUrl}>
             <div className={styles.mainpage}>
                 {loading ? (<div className={styles.loader}>
                     <Bars color='black' height={100} width={100} />
